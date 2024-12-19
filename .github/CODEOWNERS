@@ -68,6 +68,7 @@
 
 /apps/alerting/ @grafana/alerting-backend @grafana/alerting-frontend
 /apps/playlist/ @grafana/grafana-app-platform-squad
+/apps/investigation/ @fcjack @matryer
 /pkg/api/ @grafana/grafana-backend-group
 /pkg/apis/ @grafana/grafana-app-platform-squad
 /pkg/apis/query @grafana/grafana-datasources-core-services
@@ -209,7 +210,9 @@
 /devenv/dev-dashboards/panel-trend @grafana/dataviz-squad
 /devenv/dev-dashboards/panel-xychart @grafana/dataviz-squad
 /devenv/dev-dashboards/transforms @grafana/dataviz-squad
-/devenv/dev-dashboards/panel-datagrid @grafana/dataviz-squad
+/devenv/dev-dashboards/all-panels.json @grafana/dataviz-squad
+/devenv/dev-dashboards/dashboards.go @grafana/dataviz-squad
+/devenv/dev-dashboards/home.json @grafana/dataviz-squad
 
 /devenv/dev-dashboards/datasource-elasticsearch/ @grafana/aws-datasources
 /devenv/dev-dashboards/datasource-opentsdb/ @grafana/partner-datasources
@@ -229,7 +232,7 @@
 /devenv/dev-dashboards/panel-dashlist @grafana/dashboards-squad
 /devenv/dev-dashboards/live @grafana/dashboards-squad
 
-/devenv/dev-dashboards/panel-framegraph @grafana/observability-traces-and-profiling
+/devenv/dev-dashboards/panel-flamegraph/ @grafana/observability-traces-and-profiling
 /devenv/dev-dashboards/panel-polystat @grafana/plugins-platform-frontend
 /devenv/dev-dashboards/extensions/ @grafana/plugins-platform-frontend
 
@@ -616,7 +619,6 @@ playwright.config.ts @grafana/plugins-platform-frontend
 /scripts/trigger_windows_build.sh @grafana/grafana-developer-enablement-squad
 /scripts/cleanup-husky.sh @grafana/frontend-ops
 /scripts/verify-repo-update/ @grafana/grafana-developer-enablement-squad
-/scripts/generate-icon-bundle.js @grafana/plugins-platform-frontend @grafana/grafana-frontend-platform
 /scripts/generate-rtk-apis.ts @grafana/grafana-frontend-platform
 /scripts/generate-alerting-rtk-apis.ts @grafana/alerting-frontend
 /scripts/levitate-parse-json-report.js @grafana/plugins-platform-frontend
